@@ -1,0 +1,12 @@
+<div class="container">
+    <h1>edit Categoria</h1>
+</div>
+<form #f="ngForm" (ngSubmit)="agregar(objeto.id,objeto)">
+    
+    <div class="form-group">
+      <label for="exampleInputEmail1">nombre</label>
+      <input type="text" class="form-control" [(ngModel)]="objeto.nombreCategoria" name="nombre" value="objeto.nombreCategoria" required>
+    </div>
+    
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>

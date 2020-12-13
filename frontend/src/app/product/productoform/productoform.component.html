@@ -1,0 +1,30 @@
+<div class="container">
+    <h1>Nuevo Producto</h1>
+</div>
+<form #f="ngForm" (ngSubmit)="agregar()">
+    
+    <div class="form-group">
+      <label for="exampleInputEmail1">Nombre</label>
+      <input type="text" class="form-control" [(ngModel)]="nuevoproducto.nombreProducto" name="nombre" required >
+    </div>
+    <div class="form-group">
+      <label for="exampleInputPassword1">Descripcion</label>
+      <input type="text" class="form-control" [(ngModel)]="nuevoproducto.descripcion" name="descripcion" required>
+    </div>
+    <div class="form-group">
+        <label for="exampleInputPassword1">precio</label>
+        <input type="text" class="form-control" [(ngModel)]="nuevoproducto.precio" name="precio" required>
+    </div>
+    <div class="form-group ">
+        <label for="inputState">Categoria</label>
+        <select id="inputState" class="form-control" [(ngModel)]="nuevoproducto.categoriaDeProducto" name="categoria"  required>
+          <option value="">Elige una opcion </option>
+          <option *ngFor="let a of ListaCategorias" value="{{a.id}}">{{a.nombreCategoria}}</option>
+          
+        </select>
+    </div>
+    <div class="form-group">
+      <input type="file" name="imagen" id="">
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>

@@ -1,0 +1,32 @@
+<div class="marco">
+  <div class="posicion">
+    
+    <button type="button" class="btn btn-primary" (click)="Agregar()">Agregar Usuario</button>
+  </div>
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Nombre y Apellidos</th>
+        <th scope="col">email</th>
+        <th scope="col">isStaff</th>
+        <th scope="col">Acciones </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr  *ngFor="let a of UserList">
+        <th scope="row">{{a.id}}</th>
+        <td>{{a.username}}</td>
+        <td>{{a.email}}</td>
+        <td >{{a.is_staff}}</td>
+
+        <td>
+          <button type="button" class="btn btn-success" (click)="editar()" >Editar</button>
+          <button type="button" class="btn btn-danger" (click)="eliminar(a.id)" >Eliminar</button>
+        </td>
+      </tr>
+      
+    
+    </tbody>
+  </table>
+</div>

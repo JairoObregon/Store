@@ -1,0 +1,16 @@
+.fotos{
+    display: flex;
+    flex-direction: column;
+}
+.fotos img {
+    margin-left: 50px;
+    margin-bottom: 5px;
+    width: 50%;
+    height: 50%;
+}
+
+.img{
+    width: 70%;
+    height: 70%;
+}
+

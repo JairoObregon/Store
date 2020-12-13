@@ -1,0 +1,25 @@
+<div class="marco">
+  <div class="posicion">
+    <button type="button" class="btn btn-primary" (click)="redirigir()">Agregar Categoria</button>
+  </div>
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">Nombre Categoria</th>
+        <th scope="col">Acciones </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let a of ListaCategoria">
+        <th scope="row">{{a.id}}</th>
+        <th>{{a.nombreCategoria}}</th>
+        <td>
+          <button type="button" class="btn btn-success" (click)="editar(a.id)" >Editar</button>
+          <button type="button" class="btn btn-danger" (click)="eliminar(a.id)" >Eliminar</button>
+        </td>
+      </tr>
+      
+    </tbody>
+  </table>
+</div>

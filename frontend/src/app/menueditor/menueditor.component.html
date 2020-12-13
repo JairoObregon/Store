@@ -1,0 +1,37 @@
+<mat-drawer-container class="example-container" >
+    <mat-drawer mode="side" opened>
+        <mat-toolbar color="primary" class="ga" style="background-color: #373b0a;">
+            <mat-toolbar-row  class="border">
+                <i class="material-icons">account_balance </i>
+                <span >MENÚ</span>
+            </mat-toolbar-row>
+       
+            <mat-toolbar-row  routerLink="listausuarios" class="border" >
+              <i class="material-icons">account_box</i>
+              <span >USUARIOS</span>
+            </mat-toolbar-row>
+          
+            <mat-toolbar-row class="border" routerLink="listaproductos">
+              <i class="material-icons">description</i>
+              <span >PRODUCTOS</span>
+            </mat-toolbar-row>
+
+            <mat-toolbar-row class="border" routerLink="listacategorias">
+              <i class="material-icons">chrome_reader_mode</i>
+              <span >CATEGORIAS</span>
+              <span class="example-spacer"></span>
+            </mat-toolbar-row>
+          </mat-toolbar>
+    </mat-drawer>
+    <mat-drawer-content>
+      <p>asa</p>
+      <div class=" container">
+        <div class="row">
+          <div class="col">
+            <router-outlet></router-outlet>
+          </div>
+        </div>
+      </div>
+       
+    </mat-drawer-content>
+  </mat-drawer-container>

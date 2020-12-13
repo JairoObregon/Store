@@ -1,0 +1,12 @@
+<div class="container">
+    <h1>Nuevo Categoria</h1>
+</div>
+<form #f="ngForm" (ngSubmit)="agregar()">
+    
+    <div class="form-group">
+      <label for="exampleInputEmail1">nombre</label>
+      <input type="text" class="form-control" [(ngModel)]="nombre" name="nombre" required>
+    </div>
+    
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>

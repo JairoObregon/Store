@@ -1,0 +1,20 @@
+.marco{
+    padding-right: 10px;
+    padding-left: 10px;
+}
+.color {
+    background-color: teal;
+}
+.posicion {
+    text-align: right;
+    margin-bottom: 10px;
+    margin-right: 75px;
+}
+
+td,th {
+    vertical-align: middle;
+    text-align: center;
+}
+button{
+    margin-right: 5px;
+}

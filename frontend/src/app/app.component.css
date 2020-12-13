@@ -1,0 +1,51 @@
+body {
+    
+    background: url(..\assets\photo-1585071863849-9c95194bc0d8.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+}
+
+.row {
+    align-content: center;
+}
+img{
+    
+    border-color: black;
+    display: block;
+    margin: auto
+}
+
+h4{
+    margin-top: 10px;
+    text-align: center;
+}
+#imagenes{
+    margin-top: 30px;
+}
+.divfooter{
+    background-color: blueviolet;
+}
+h2{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.iconos{
+    display: block;
+    text-align: center;
+}
+.iconos img{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+ 
+    
+}
